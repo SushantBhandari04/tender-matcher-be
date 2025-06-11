@@ -444,6 +444,10 @@ async function refreshTenderCache() {
 // setInterval(refreshTenderCache, 10 * 60 );
 
 
+app.get('/', (req, res) => {
+    res.send('Tender Finder Backend is running');
+});
+
 
 app.post('/api/match-tenders', async (req, res) => {
     const { keywords, location }: { keywords: string[]; location: string } = req.body;
