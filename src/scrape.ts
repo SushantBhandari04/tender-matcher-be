@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { fetchTenders, saveTendersToMongo } from '../src/server'; // Adjust path if needed
+import { fetchTenders, saveTendersToMongo } from './server'; // Adjust path if needed
 import dotenv from 'dotenv';
 
 // Load environment variables (if using .env)
